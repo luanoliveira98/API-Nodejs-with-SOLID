@@ -17,7 +17,7 @@ GymPass style app.
 
 ## BRs (Business rule)
 
-- [ ] The user must not be able to register with a duplicated email;
+- [x] The user must not be able to register with a duplicated email;
 - [ ] The user will not be able to do 2 check-ins on the same day;
 - [ ] The user will not be able to do check-in if they are not close (100m) to the gym;
 - [ ] Check-in can only be validated up to 20 minutes after its creation;
@@ -26,7 +26,7 @@ GymPass style app.
 
 ## NFRs (Non-functional requirement)
 
-- [ ] The user's password must be encrypted;
-- [ ] Application data must be persisted in a PostgreSQL database;
+- [x] The user's password must be encrypted;
+- [x] Application data must be persisted in a PostgreSQL database;
 - [ ] All data lists must be paginated with 20 items per page;
 - [ ] The user must be identified by a JWT (JSON Web Token);
