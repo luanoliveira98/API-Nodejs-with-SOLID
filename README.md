@@ -12,7 +12,7 @@ GymPass style app.
 - [x] It must be possible for the user to search for nearby gyms (10km);
 - [x] It must be possible for the user to search for gyms by name;
 - [x] It must be possible for the user to do check-in to a gym;
-- [ ] It must be possible to validate a user's check-in;
+- [x] It must be possible to validate a user's check-in;
 - [x] It must be possible to register a gym;
 
 ## BRs (Business rule)
@@ -20,7 +20,7 @@ GymPass style app.
 - [x] The user must not be able to register with a duplicated email;
 - [x] The user will not be able to do 2 check-ins on the same day;
 - [x] The user will not be able to do check-in if they are not close (100m) to the gym;
-- [ ] Check-in can only be validated up to 20 minutes after its creation;
+- [x] Check-in can only be validated up to 20 minutes after its creation;
 - [ ] Check-in can only be validated by administrators;
 - [ ] The gym can only be registered by administrators;
 
