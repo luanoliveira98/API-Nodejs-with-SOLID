@@ -2,7 +2,7 @@ import { makeCreateGymUseCase } from '@/use-cases/factories/make-create-gym.use-
 import { FastifyReply, FastifyRequest } from 'fastify'
 import { z } from 'zod'
 
-export async function createGymController(
+export async function createController(
   request: FastifyRequest,
   reply: FastifyReply,
 ) {
