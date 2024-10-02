@@ -8,4 +8,8 @@ export default defineConfig({
       root: '.',
     }),
   ],
+  test: {
+    environmentMatchGlobs: [['src/http/controllers/**', 'prisma']],
+    dir: 'src',
+  },
 })
