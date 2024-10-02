@@ -2,6 +2,7 @@ import { FastifyInstance } from 'fastify'
 import { registerController } from './controllers/register.controller'
 import { authenticateController } from './controllers/authenticate.controller'
 import { profileController } from './controllers/profile'
+import { verifyJwtMiddleware } from './middlewares/verify-jwt.middleware'
 
 export async function appRoutes(app: FastifyInstance) {
   app.post('/users', registerController)
@@ -9,5 +10,5 @@ export async function appRoutes(app: FastifyInstance) {
   app.post('/sessions', authenticateController)
 
   /** Authenticated */
-  app.get('/me', profileController)
+  app.get('/me', { onRequest: [verifyJwtMiddleware] }, profileController)
 }
