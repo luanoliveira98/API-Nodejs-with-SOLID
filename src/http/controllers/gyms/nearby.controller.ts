@@ -17,7 +17,7 @@ export async function nearbyController(
   })
 
   const { latitude, longitude, page } = nearbyGymsQuerySchema.parse(
-    request.body,
+    request.query,
   )
 
   const fetchNearbyGymsUseCase = makeFetchNearbyGymsUseCase()
