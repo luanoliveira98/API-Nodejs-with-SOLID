@@ -19,7 +19,7 @@ export async function createController(
     }),
   })
 
-  const { gymId } = createCheckInParamsSchema.parse(request.body)
+  const { gymId } = createCheckInParamsSchema.parse(request.params)
   const { latitude, longitude } = createCheckInBodySchema.parse(request.body)
 
   const checkInUseCase = makeCheckInUseCase()
